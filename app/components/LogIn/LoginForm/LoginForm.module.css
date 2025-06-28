@@ -1,0 +1,158 @@
+/* src/components/LoginForm/LoginForm.module.css */
+.container {
+  background-color: var(--white);
+  padding: 30px 40px;
+  width: 380px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+.loginFormContainer {
+  background-color: var(--white);
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 380px; /* Fixed width as per screenshot */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.logoProckure {
+  margin-bottom: 20px;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.welcomeText {
+  font-size: 2em;
+  font-weight: 600;
+  color: var(--dark-gray);
+  margin-bottom: 30px;
+}
+
+.form {
+  width: 100%;
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.inputField {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--input-bg);
+  font-size: 0.95rem;
+  color: var(--dark-gray);
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.inputField::placeholder {
+  color: #888;
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.forgotPassword {
+  position: absolute;
+  right: 0;
+  bottom: -25px; /* Adjust based on input height */
+  font-size: 0.85rem;
+  color: var(--primary-blue);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.loginButton {
+  width: 70%;
+  padding: 15px;
+  background-color: #28a745; /* Green button */
+  color: var(--white);
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-top: 30px; /* Space between password field and button */
+  transition: background-color 0.3s ease;
+}
+
+.loginButton:hover {
+  background-color: #218838;
+}
+
+.orContinue {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.orContinue::before,
+.orContinue::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background-color: var(--border-color);
+}
+
+.orContinue::before {
+  left: 0;
+}
+
+.orContinue::after {
+  right: 0;
+}
+
+.socialLogins {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.socialButton {
+  background-color: var(--input-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.socialButton:hover {
+  background-color: #e2e6ea;
+}
+
+.signUpLink {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+.signUpLink a {
+  color: var(--primary-blue);
+  font-weight: 500;
+  text-decoration: underline;
+}

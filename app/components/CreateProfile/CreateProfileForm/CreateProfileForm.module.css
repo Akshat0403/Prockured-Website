@@ -1,0 +1,120 @@
+/* src/components/CreateProfileForm/CreateProfileForm.module.css */
+.createProfileFormContainer {
+  background-color: #ffffff; /* White background for the form card */
+  padding: 40px; /* Increased padding to match image */
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Softer, slightly larger shadow */
+  width: 450px; /* Adjusted width to fit contents as per image */
+  max-width: 100%; /* Ensure responsiveness */
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box; /* Include padding in width */
+  font-family: 'Poppins', sans-serif; /* Using Poppins as per earlier assumption */
+}
+
+.headerSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px; /* Space below header */
+  padding-bottom: 15px; /* Padding for the line under header */
+  border-bottom: 1px solid #e0e0e0; /* Thin gray line below header */
+}
+
+.title {
+  font-size: 1.8em; /* Adjusted font size for "Create Profile" */
+  font-weight: bold;
+  color: #333;
+  margin: 0; /* Remove default margin from h2 */
+}
+
+.logoAndCheckmark {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between logo and checkmark */
+}
+
+.dmLogo {
+  /* No specific styles needed here if width/height are set in JSX */
+}
+
+.checkmarkIcon {
+  font-size: 1.2em;
+  color: #28a745; /* Green color for checkmark */
+  font-weight: bold;
+}
+
+.form {
+  width: 100%;
+}
+
+.inputGroup {
+  margin-bottom: 18px; /* Space between input groups */
+  position: relative; /* For verify email link positioning */
+}
+
+.inputLabel {
+  display: block;
+  font-size: 0.85rem; /* Smaller, lighter label text */
+  color: #76B117; /* Lighter color for label */
+  margin-bottom: 5px;
+  font-weight: 900; /* Slightly bolder for clarity */
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px 12px; /* Slightly less padding to match image */
+  border: 1px solid #dcdcdc; /* Lighter border color */
+  border-radius: 6px; /* Slightly more rounded corners */
+  background-color: #f7f7f7; /* Very light gray background in inputs */
+  font-size: 0.95rem;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.inputField::placeholder {
+  color: #aaa;
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: #007bff; /* Primary blue on focus */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15); /* Soft blue shadow */
+  background-color: #fff; /* White background on focus */
+}
+
+.verifyEmailLink {
+  position: absolute;
+  right: 0;
+  top: 0; /* Positioned at the top right of the input group */
+  font-size: 0.8em; /* Smaller font for "Verify Email" */
+  color: #007bff; /* Blue color */
+  text-decoration: none; /* No underline by default */
+  font-weight: 500;
+}
+
+.verifyEmailLink:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.signUpButton {
+  width: 100%;
+  padding: 14px; /* Slightly less padding than login button */
+  background-color: #4CAF50; /* Distinct green color from image */
+  color: white;
+  font-size: 1.1em;
+  font-weight: 600;
+  border-radius: 6px; /* Match input field radius */
+  margin-top: 25px; /* Space above the button */
+  transition: background-color 0.2s ease;
+  box-shadow: 0 3px 8px rgba(76, 175, 80, 0.3); /* Green shadow for button */
+}
+
+.signUpButton:hover {
+  background-color: #45a049; /* Darker green on hover */
+  box-shadow: 0 5px 10px rgba(76, 175, 80, 0.4);
+}
+
+/* Remove any irrelevant styles from the previous LoginForm.module.css
+   that might have been copied over, such as .forgotPassword, .orContinue,
+   .socialLogins, .signUpLink, etc., as they are not present in this design. */

@@ -1,0 +1,55 @@
+/* src/app/AuthPage.module.css */
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1400px; /* Adjust max-width as needed */
+  min-height: 90vh; /* Make sure it takes most of the viewport height */
+  background-color: var(--light-gray);
+  border-radius: 10px;
+  overflow: hidden; /* Ensures child rounded corners are respected */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  margin: 20px; /* Some margin from the body edges */
+}
+
+.leftPanel {
+  flex: 1.8; /* Takes up more space */
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-gray); /* Background for the image gallery section */
+  border-radius: 10px;
+  overflow: hidden; /* Important for rounded corners */
+}
+
+.rightPanel {
+  flex: 1; /* Takes up less space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white); /* Right panel background */
+  padding: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column; /* Stack panels vertically */
+    width: 95%;
+    max-width: 600px; /* Limit width on smaller screens */
+    min-height: auto;
+  }
+
+  .leftPanel, .rightPanel {
+    flex: none; /* Remove flex sizing */
+    width: 100%; /* Full width */
+    border-radius: 0; /* Remove specific panel rounded corners */
+  }
+
+  .leftPanel {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .rightPanel {
+    padding: 30px 20px; /* Adjust padding for smaller screens */
+  }
+}

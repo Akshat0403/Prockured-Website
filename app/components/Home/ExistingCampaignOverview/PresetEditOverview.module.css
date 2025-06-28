@@ -1,0 +1,127 @@
+/* NewCampaign.module.css */
+
+.container {
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content:last baseline;
+    align-items: center;
+}
+
+.heading {
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+    margin-left: 18px;
+}
+
+.entryForm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section {
+    margin-bottom: 1.5rem;
+}
+
+.inputGroup {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 80px;
+}
+
+.select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.audienceTags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: #eee;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.imageWrapper {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.image {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.productsList {
+  width: 100%;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+
+.productItem {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1.5fr 1fr 1fr;
+  align-items: center;
+  padding: 0.5rem;
+  border: 1px solid #76B117;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+
+.textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.cancelBtn {
+    padding: 0.6rem 1.2rem;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.saveBtn {
+    padding: 0.6rem 1.2rem;
+    background-color: #00aa44;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.saveBtn:hover {
+    background-color: #008f3c;
+}

@@ -1,0 +1,54 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 24px;
+  gap: 24px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+/* Left Column */
+.leftColumn {
+  flex: 2;
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* Right Column */
+.rightColumn {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* Section Title */
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #76b900;
+  margin-bottom: 16px;
+}
+
+/* List Items */
+.listItem, .draftItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 12px;
+  margin-bottom: 12px;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  font-size: 14px;
+  color: #333;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.listItem:hover, .draftItem:hover {
+  background-color: #f0f7eb;
+}

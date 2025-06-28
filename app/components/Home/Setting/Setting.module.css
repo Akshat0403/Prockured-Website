@@ -1,0 +1,117 @@
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonView {
+  background-color: white;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  border: 2px solid lightgray;
+  border-radius: 20px;
+  height: 70px;
+  width: 400px;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.buttonView:hover {
+  background-color: #f3f3f3;
+}
+
+.buttonText {
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #323232;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+/* Minimum Order Value Display */
+.minOrderValue {
+  font-size: 14px;
+  margin-left: 12px;
+  color: #76b117;
+  font-weight: bold;
+}
+
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 24px 32px;
+  border-radius: 16px;
+  width: 360px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.modalTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.modalInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.modalBtn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.modalCancel {
+  background-color: #eee;
+  color: #555;
+}
+
+.modalSave {
+  background-color: #76b117;
+  color: white;
+}
