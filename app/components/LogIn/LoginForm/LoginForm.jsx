@@ -35,8 +35,10 @@ const LoginForm = () => {
               </button>
             </a>
           </div>
-          <a href='/?view=create-profile' type='submit' className={styles.loginButton}>
-            Login  
+          <a href='/?view=create-profile'>
+            <div type='submit' className={styles.loginButton}>
+              Login  
+            </div>
           </a>
         </form>
 

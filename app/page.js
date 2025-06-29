@@ -1,35 +1,26 @@
-'use client';
+// src/app/page.js
+// This file is a Server Component by default.
 
-import React from 'react';
-import { useSearchParams } from 'next/navigation';
+import { Suspense } from "react"; // Still useful for granular control if needed, but primary Suspense is in layout.js
+import ClientViewHandler from "./ClientViewHandler"; // Directly import the Client Component
 
-// Auth screens
-import LogIn from './components/LogIn/LogIn';
-import SignUp from './components/SignUp/SignUp';
-import ForgotPassword from './components/ForgotPassword/ForgotPassword';
-import CreateProfile from './components/CreateProfile/CreateProfile';
-
-// Dashboard (includes sidebar + main content switch)
-import DashboardLayout from './components/Home/Dashboard/DashboardLayout';
-
-const page = () => {
-  const searchParams = useSearchParams();
-  const currentView = searchParams.get('view') || 'login';
-
-  const authViews = ['login', 'signup', 'forgot-password', 'create-profile'];
-
-  if (authViews.includes(currentView)) {
-    switch (currentView) {
-      case 'login': return <LogIn />;
-      case 'signup': return <SignUp />;
-      case 'forgot-password': return <ForgotPassword />;
-      case 'create-profile': return <CreateProfile />;
-      default: return <LogIn />;
-    }
-  }
-
-  // If not an auth view, render the dashboard layout
-  return <DashboardLayout />;
-};
-
-export default page;
+/**
+ * The main Page component for your application.
+ * This is a Server Component that will render the initial shell.
+ * It directly imports ClientViewHandler, which is a Client Component.
+ * Next.js will handle the client-side rendering "bailout" for ClientViewHandler
+ * because it uses hooks like `useSearchParams` that require the client environment.
+ * The `Suspense` boundary in layout.js will provide a loading state during this process.
+ */
+export default function Page() {
+  return (
+    // Although layout.js has a Suspense, it's good practice to wrap components
+    // that might 'suspend' (like client components using client-only hooks)
+    // with their own Suspense boundary for more specific loading states if desired.
+    // For this specific error, the Suspense in layout.js should be sufficient,
+    // but keeping it here doesn't hurt and allows for finer-grained loading UIs.
+    <Suspense fallback={<div className="flex items-center justify-center min-h-screen bg-gray-50 text-xl font-medium text-gray-700">Loading view...</div>}>
+      <ClientViewHandler />
+    </Suspense>
+  );
+}

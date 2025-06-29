@@ -79,7 +79,7 @@
 }
 
 .loginButton {
-  width: 70%;
+  width: 90%;
   padding: 15px;
   background-color: #28a745; /* Green button */
   color: var(--white);
@@ -88,6 +88,9 @@
   border-radius: 8px;
   margin-top: 30px; /* Space between password field and button */
   transition: background-color 0.3s ease;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .loginButton:hover {

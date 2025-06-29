@@ -137,8 +137,10 @@ const CreateProfileForm = () => {
         </div>
 
         {/* Sign Up Button */}
-        <a href = '/?view=chat' className={styles.signUpButton}>  
+        <a href = '/?view=chat'>
+          <div className={styles.signUpButton}>  
             Sign Up
+          </div>
         </a>
       </form>
     </div>

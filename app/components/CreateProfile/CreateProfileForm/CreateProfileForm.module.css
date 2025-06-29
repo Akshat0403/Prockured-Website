@@ -108,6 +108,9 @@
   margin-top: 25px; /* Space above the button */
   transition: background-color 0.2s ease;
   box-shadow: 0 3px 8px rgba(76, 175, 80, 0.3); /* Green shadow for button */
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .signUpButton:hover {
