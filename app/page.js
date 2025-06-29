@@ -12,7 +12,7 @@ import CreateProfile from './components/CreateProfile/CreateProfile';
 // Dashboard (includes sidebar + main content switch)
 import DashboardLayout from './components/Home/Dashboard/DashboardLayout';
 
-const HomePage = () => {
+const page = () => {
   const searchParams = useSearchParams();
   const currentView = searchParams.get('view') || 'login';
 
@@ -32,4 +32,4 @@ const HomePage = () => {
   return <DashboardLayout />;
 };
 
-export default HomePage;
+export default page;
